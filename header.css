@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu nav{
+    display: flex;
+    gap: 50px;
+}
+a{
+    text-decoration: none;
+}
+.menu nav a{
+    color: black;
+    text-decoration: none;
+}
+.menu nav a:hover{
+   color: gold;
+   transition: all 0.3s;
+}
+.navbar .logo a{
+    color: rgb(132, 120, 50);
+    font-size: 25px;
+}
+.shopping_bag{
+    font-size: 36px;
+    color: rgb(132, 120, 50);
+}
+.shopping_bag:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+#btnToggle{
+    display: none;
+}
+#mobinavbar{
+        display: none;
+    }
+@media screen and (max-width: 700px) {
+    #btnToggle{
+        display: block;
+        background-color: transparent;
+        border-color: none;
+        cursor: pointer; 
+    }
+
+    #btnToggle .material-symbols-outlined{
+        font-size: 30px;
+        color: rgb(132, 120, 50);
+    }
+    #menuItem{
+        display: none;
+    }
+    #mobinavbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(132, 120, 50);
+        color: white;
+        transition: all 0.3s;
+        height: 0px;
+    }
+    #mobinavbar.active{
+        height: 200px;
+    }
+    #mobinavbar a{
+        padding: 10px;
+        color: white;
+    }
+}
