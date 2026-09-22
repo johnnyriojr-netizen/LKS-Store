@@ -1,0 +1,48 @@
+.small-container{
+    max-width:1080px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.title{
+    color: rgb(96, 83, 8);
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px auto;
+    text-decoration: none;
+    font-style: normal;
+}
+.contact{
+    max-width: 600px;
+    margin: auto;
+}
+input,label,textarea{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+.mb-3{
+    margin: 15px auto;
+}
+.contact input, .contact textarea{
+    padding: 10px 6px;
+    border: 2px solid rgb(96, 83, 8);
+}
+
+.contact input:focus, .contact textarea:focus{
+    border: 2px solid rgb(239, 210, 43);
+    outline: none;
+}
+.btn2{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: rgb(96, 83, 8);
+    border: 1px solid rgb(96, 83, 8);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin: auto;
+}
+.btn2:hover{
+    background-color: rgb(203, 185, 81);;
+}
